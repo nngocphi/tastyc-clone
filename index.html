@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tastyc - Restaurant</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Playfair+Display:wght@500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container block-shadow block-shadow--l">
+            <a href="#" class="header-logo__link">
+                <img class="header-logo__img" src="./assets/img/black-logo.png" alt="Header Logo">
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link text--uppercase">
+                            Home
+                            <ion-icon class="header-nav__icon" name="chevron-down-outline"></ion-icon>
+                        </a>
+                        <ul class="header-subnav__list block-shadow block-shadow--s">
+                            <li class="header-subnav__item">
+                                <a href="#" class="header-subnav__link text--uppercase">Home slider</a>
+                            </li>
+                            <li class="header-subnav__item">
+                                <a href="#" class="header-subnav__link text--uppercase">Home image</a>
+                            </li>
+                            <li class="header-subnav__item">
+                                <a href="#" class="header-subnav__link text--uppercase">Home video</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link text--uppercase">
+                            About
+                            <ion-icon class="header-nav__icon" name="chevron-down-outline"></ion-icon>
+                        </a>
+                        <ul class="header-subnav__list block-shadow block-shadow--s">
+                            <li class="header-subnav__item">
+                                <a href="#" class="header-subnav__link text--uppercase">About me</a>
+                            </li>
+                            <li class="header-subnav__item">
+                                <a href="#" class="header-subnav__link text--uppercase">About us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link text--uppercase">
+                            Menu
+                            <ion-icon class="header-nav__icon" name="chevron-down-outline"></ion-icon>
+                        </a>
+                        <ul class="header-subnav__list block-shadow block-shadow--s">
+                            <li class="header-subnav__item">
+                                <a href="#" class="header-subnav__link text--uppercase">Menu (Tabs)</a>
+                            </li>
+                            <li class="header-subnav__item">
+                                <a href="#" class="header-subnav__link text--uppercase">Menu (List)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link text--uppercase">Gallery</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link text--uppercase">
+                            Blog
+                            <ion-icon class="header-nav__icon" name="chevron-down-outline"></ion-icon>
+                        </a>
+                        <ul class="header-subnav__list block-shadow block-shadow--s">
+                            <li class="header-subnav__item">
+                                <a href="#" class="header-subnav__link text--uppercase">Blog list</a>
+                            </li>
+                            <li class="header-subnav__item">
+                                <a href="#" class="header-subnav__link text--uppercase">Blog post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link text--uppercase">Contact</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link text--uppercase">Shop</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__right">
+                <div class="header-reservation">
+                    <button class="btn header__btn">Reservation</button>
+                    <a href="#" class="header-reservation__cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span class="header-reservation__badge">0</span>
+                        <div class="header-reservation__status block-shadow block-shadow--s">
+                            <span class="header-reservation__status--no-cart">No products in the cart.</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="header-nav--under-pc">
+                    <ion-icon class="header-menu__icon" name="menu-outline"></ion-icon>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <div class="welcome__banner">
+                <img class="welcome__img" src="./assets/img/home-slide-1.jpg" alt="Welcome banner 1">
+                <div class="welcome__overlay"></div>
+            </div>
+            <div class="welcome__content section">
+                <div class="title title--left title--white title--l">Hello, new friend!</div>
+                <h1 class="heading welcome__heading">Welcome Back<br>to Tastyc</h1>
+                <p class="desc desc--white welcome__desc">Quaerat debitis, vel, sapiente dicta sequi<br>
+                    labore porro pariatur harum expedita.</p>
+                <button class="btn btn--larger">Reservation</button>
+                <button class="btn btn--transparent btn--transparent-main">Open menu</button>
+            </div>
+            <div class="welcome-slider__nav section">
+                <div class="welcome-slider__dots">
+                    <span class="welcome-slider__dot active"></span>
+                    <span class="welcome-slider__dot"></span>
+                    <span class="welcome-slider__dot"></span>
+                </div>
+                <div class="welcome-slider__arrows">
+                    <ion-icon class="welcome-slider__arrow disabled" name="arrow-back"></ion-icon>
+                    <ion-icon class="welcome-slider__arrow" name="arrow-forward"></ion-icon>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__container block-shadow block-shadow--l block-shadow--above">
+                <section class="about__info section">
+                    <div class="info__img-container">
+                        <img src="./assets/img/about.jpg" alt="" class="info__img">
+                        <a href="#" class="info-play__btn">
+                            <ion-icon class="info-play__icon" name="play"></ion-icon>
+                        </a>
+                        <!-- <div class="play-btn-animation"></div> -->
+                    </div>
+                    <div class="info__content">
+                        <div class="title title--left title--black">About us</div>
+                        <h2 class="heading">We invite you to visit our restaurant</h2>
+                        <p class="desc">Assumenda possimus eaque illo iste, autem. Porro eveniet,
+                            autem ipsam
+                            vitae amet repellat repudiandae tenetur, quod corrupti consectetur cum? Repudiandae
+                            dignissimos fugiat sit nam.
+                            Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam
+                            quaerat. Cumque, consequatur!</p>
+                        <button class="btn">Read more</button>
+                        <span class="info-socials">
+                            <a href="#" class="info-socials__link">
+                                <ion-icon class="info-socials__icon" name="logo-facebook"></ion-icon>
+                            </a>
+                            <a href="#" class="info-socials__link">
+                                <ion-icon class="info-socials__icon" name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="#" class="info-socials__link">
+                                <ion-icon class="info-socials__icon" name="logo-twitter"></ion-icon>
+                            </a>
+                            <a href="#" class="info-socials__link">
+                                <ion-icon class="info-socials__icon" name="logo-youtube"></ion-icon>
+                            </a>
+                        </span>
+                    </div>
+                </section>
+                <section class="about__features section">
+                    <div class="features__content">
+                        <div class="title title--black title--center">Features</div>
+                        <h2 class="heading">Why people choose us?</h2>
+                        <p class="desc">Porro eveniet, autem ipsam vitae consequatur!</p>
+                    </div>
+                    <div class="features__items">
+                        <div class="features-item">
+                            <img class="features-item__img" src="./assets/img/icon-serv-1.png" alt="Service icon 1">
+                            <h2 class="features-item__heading">Menu for every taste</h2>
+                            <p class="features-item__desc">Dolor sit amet, consectetur adipisicing elit et molestias
+                                possimus
+                            </p>
+                        </div>
+                        <div class="features-item">
+                            <img class="features-item__img" src="./assets/img/icon-serv-2.png" alt="Service icon 2">
+                            <h2 class="features-item__heading">Always fresh ingredients</h2>
+                            <p class="features-item__desc">Assumenda possimus eaque illo iste, autem. Porro eveniet
+                                autem</p>
+                        </div>
+                        <div class="features-item">
+                            <img class="features-item__img" src="./assets/img/icon-serv-3.png" alt="Service icon 3">
+                            <h2 class="features-item__heading">Menu for every taste</h2>
+                            <p class="features-item__desc">Rolorem, beatae dolorum, praesentium itaque et quam quaerat
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="about__working-hours section">
+                    <div class="working-hours__wrapper">
+                        <div class="working-hours__img">
+                            <div class="title title--left title--white">About us</div>
+                            <h2 class="heading heading--larger">Working hours</h2>
+                            <p class="desc desc--white">Rolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+                            <button class="btn">Reservation</button>
+                            <button class="btn btn--transparent btn--transparent-main">Contact us</button>
+                        </div>
+                        <div class="working-hours__time">
+                            <div class="working-hours__container">
+                                <div class="working-hours__day text--uppercase">
+                                    <span>Sunday to Tuesday</span>
+                                </div>
+                                <div class="working-hours__hour">
+                                    <span>09</span>
+                                    <span class="working-hours__colon">:</span>
+                                    <span>00</span>
+                                </div>
+                                <div class="working-hours__hour">
+                                    <span>22</span>
+                                    <span class="working-hours__colon">:</span>
+                                    <span>00</span>
+                                </div>
+                            </div>
+                            <div class="working-hours__container">
+                                <div class="working-hours__day text--uppercase">
+                                    <span>Friday to Saturday</span>
+                                </div>
+                                <div class="working-hours__hour">
+                                    <span>11</span>
+                                    <span class="working-hours__colon">:</span>
+                                    <span>00</span>
+                                </div>
+                                <div class="working-hours__hour">
+                                    <span>19</span>
+                                    <span class="working-hours__colon">:</span>
+                                    <span>00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about__statistics section">
+                    <div class="statistics__item">
+                        <div class="statistics__number">
+                            <span>200</span>
+                            <span class="statistics__operator">+</span>
+                        </div>
+                        <div class="statistics__label text--uppercase">
+                            <span>Visitor daily</span>
+                        </div>
+                    </div>
+                    <div class="statistics__item">
+                        <div class="statistics__number">
+                            <span>400</span>
+                            <span class="statistics__operator">+</span>
+                        </div>
+                        <div class="statistics__label text--uppercase">
+                            <span>Deliveries monthly</span>
+                        </div>
+                    </div>
+                    <div class="statistics__item">
+                        <div class="statistics__number">
+                            <span>100</span>
+                            <span class="statistics__operator">%</span>
+                        </div>
+                        <div class="statistics__label text--uppercase">
+                            <span>Positive feedback</span>
+                        </div>
+                    </div>
+                    <div class="statistics__item">
+                        <div class="statistics__number">
+                            <span>40</span>
+                            <span class="statistics__operator">+</span>
+                        </div>
+                        <div class="statistics__label text--uppercase">
+                            <span>Awards and honors</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="mobile-app section">
+            <div class="mobile-app__content">
+                <div class="title title--left title--white">Mobile application</div>
+                <h2 class="heading heading--larger">Download<br>our application</h2>
+                <p class="desc desc--white mobile-app__desc">Quaerat debitis, vel, sapiente dicta sequi<br>
+                    labore porro pariatur harum expedita.</p>
+                <button class="btn btn--larger">
+                    <ion-icon class="btn-icon" name="logo-apple"></ion-icon>
+                    Appstore
+                </button>
+                <button class="btn btn--larger">
+                    <ion-icon class="btn-icon" name="logo-google-playstore"></ion-icon>
+                    Google play
+                </button>
+            </div>
+            <div class="mobile-app__img-container">
+                <img src="./assets/img/burger.png" alt="Burger" class="mobile-app__img">
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="newsletter__container block-shadow block-shadow--l block-shadow--above">
+                <section class="newsletter__testimonials section">
+                    <div class="testimonials__content">
+                        <div class="title title--black title--center">Testimonials</div>
+                        <h2 class="heading">What Our visitors say</h2>
+                        <p class="desc">Porro eveniet, autem ipsam corrupti consectetur cum.<br>
+                            Repudiandae dignissimos fugiat sit nam.
+                        </p>
+                    </div>
+                    <div class="testimonials-feedback">
+                        <div class="testimonials-feedback__card">
+                            <div class="testimonials-feedback__content">
+                                <h3 class="testimonials-feedback__title">The best restaurant!</h3>
+                                <p class="testimonials-feedback__text">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing
+                                    elit. Similique, eligendi dolorem? Voluptates rem magnam nesciunt ullam hic error
+                                    sed,
+                                    minus, accusantium inventore ex reprehenderit ipsum aperiam libero ut, laudantium
+                                    delectus deleniti debitis quas dolore quos. Accusamus ea saepe, veniam. Nemo.</p>
+                            </div>
+                            <div class="testimonials-feedback__bottom">
+                                <span class="testimonials-feedback__visitor">
+                                    <img src="./assets/img/face-4.jpg" alt="" class="testimonials-feedback__avt">
+                                    <span class="text--uppercase">Oscar Oldman</span>
+                                </span>
+                                <span class="testimonials-feedback__date">02.02.21</span>
+                            </div>
+                        </div>
+                        <div class="testimonials-feedback__card active">
+                            <div class="testimonials-feedback__content">
+                                <h3 class="testimonials-feedback__title">It was very delicious!</h3>
+                                <p class="testimonials-feedback__text">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing
+                                    elit. Similique, eligendi dolorem? Voluptates rem magnam nesciunt ullam hic error
+                                    sed,
+                                    minus, accusantium inventore ex reprehenderit ipsum aperiam libero ut, laudantium
+                                    delectus deleniti debitis quas dolore quos. Accusamus ea saepe, veniam. Nemo.</p>
+                            </div>
+                            <div class="testimonials-feedback__bottom">
+                                <span class="testimonials-feedback__visitor">
+                                    <img src="./assets/img/face-1.jpg" alt="" class="testimonials-feedback__avt">
+                                    <span class="text--uppercase">Emma Newman</span>
+                                </span>
+                                <span class="testimonials-feedback__date">02.02.21</span>
+                            </div>
+                        </div>
+                        <div class="testimonials-feedback__card">
+                            <div class="testimonials-feedback__content">
+                                <h3 class="testimonials-feedback__title">I'm delighted!</h3>
+                                <p class="testimonials-feedback__text">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing
+                                    elit. Similique, eligendi dolorem? Voluptates rem magnam nesciunt ullam hic error
+                                    sed,
+                                    minus, accusantium inventore ex reprehenderit ipsum aperiam libero ut, laudantium
+                                    delectus deleniti debitis quas dolore quos. Accusamus ea saepe, veniam. Nemo.</p>
+                            </div>
+                            <div class="testimonials-feedback__bottom">
+                                <span class="testimonials-feedback__visitor">
+                                    <img src="./assets/img/face-2.jpg" alt="" class="testimonials-feedback__avt">
+                                    <span class="text--uppercase">Victoria Freeman</span>
+                                </span>
+                                <span class="testimonials-feedback__date">02.02.21</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-nav">
+                        <button class="btn">More about us</button>
+                        <div class="testimonials-nav__dots">
+                            <span class="testimonials-nav__dot active"></span>
+                            <span class="testimonials-nav__dot"></span>
+                            <span class="testimonials-nav__dot"></span>
+                            <span class="testimonials-nav__dot"></span>
+                        </div>
+                        <div class="testimonials-nav__arrows">
+                            <span class="testimonials-nav__label text--uppercase">Slider navigation</span>
+                            <span class="testimonials-nav__arrow-container">
+                                <ion-icon class="testimonials-nav__arrow" name="arrow-back"></ion-icon>
+                            </span>
+                            <span class="testimonials-nav__arrow-container">
+                                <ion-icon class="testimonials-nav__arrow" name="arrow-forward"></ion-icon>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <section class="newsletter__post section">
+                    <div class="post__content">
+                        <div class="title title--black title--center">Newsletter</div>
+                        <h2 class="heading">Use the tips<br>and recipes of our chefs</h2>
+                        <p class="desc">Porro eveniet, autem ipsam corrupti consectetur cum.<br>
+                            Repudiandae dignissimos fugiat sit nam.
+                        </p>
+                    </div>
+                    <div class="post__items">
+                        <div class="post__card">
+                            <a href="#" class="post__img-container">
+                                <img src="./assets/img/blog-6.jpg" alt="" class="post__img">
+                                <span class="post__label text--uppercase">Salads</span>
+                            </a>
+                            <div class="post__container">
+                                <div class="card__content">
+                                    <a href="#" class="post__title-link">
+                                        <h3 class="post__title">Business Breakfast</h3>
+                                    </a>
+                                    <p class="post__text">Consectetur adipisicing elit. Soluta, impedit, saepe. Unde
+                                        minima distinctio officiis amet temporibus, consequuntur dolorem dicta…
+                                        <a href="#" class="post__link text--uppercase">Read more</a>
+                                    </p>
+                                </div>
+                                <div class="post__bottom">
+                                    <span class="post__visitor">
+                                        <img src="./assets/img/unknown-avt.jpg" alt="" class="post__avt">
+                                        <span class="text--uppercase">Admin</span>
+                                    </span>
+                                    <span class="post__date">May 1, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post__card">
+                            <a href="#" class="post__img-container">
+                                <img src="./assets/img/blog-5.jpg" alt="" class="post__img">
+                                <span class="post__label text--uppercase">Deserts</span>
+                            </a>
+                            <div class="post__container">
+                                <div class="card__content">
+                                    <a href="#" class="post__title-link">
+                                        <h3 class="post__title">Pancakes in Chocolate</h3>
+                                    </a>
+                                    <p class="post__text">Consectetur adipisicing elit. Soluta, impedit, saepe. Unde
+                                        minima distinctio officiis amet temporibus, consequuntur dolorem dicta…
+                                        <a href="#" class="post__link text--uppercase">Read more</a>
+                                    </p>
+                                </div>
+                                <div class="post__bottom">
+                                    <span class="post__visitor">
+                                        <img src="./assets/img/unknown-avt.jpg" alt="" class="post__avt">
+                                        <span class="text--uppercase">Admin</span>
+                                    </span>
+                                    <span class="post__date">May 1, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post__card">
+                            <a href="#" class="post__img-container">
+                                <img src="./assets/img/blog-4.jpg" alt="" class="post__img">
+                                <span class="post__label text--uppercase">Deserts</span>
+                            </a>
+                            <div class="post__container">
+                                <div class="card__content">
+                                    <a href="#" class="post__title-link">
+                                        <h3 class="post__title">Tuna & Tomatoes</h3>
+                                    </a>
+                                    <p class="post__text">Consectetur adipisicing elit. Soluta, impedit, saepe. Unde
+                                        minima distinctio officiis amet temporibus, consequuntur dolorem dicta…
+                                        <a href="#" class="post__link text--uppercase">Read more</a>
+                                    </p>
+                                </div>
+                                <div class="post__bottom">
+                                    <span class="post__visitor">
+                                        <img src="./assets/img/unknown-avt.jpg" alt="" class="post__avt">
+                                        <span class="text--uppercase">Admin</span>
+                                    </span>
+                                    <span class="post__date">May 1, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <p class="desc post-footer__desc">Read the news of our restaurant, recipes for delicious fears,
+                            tips for your home
+                            kitchen in our blog!</p>
+                        <button class="btn">All publications</button>
+                    </div>
+                </section>
+                <section class="newsletter__subscribe section">
+                    <div class="subscribe__container">
+                        <div class="title title--center title--white">Newsletter</div>
+                        <h2 class="heading heading--larger">Subscribe our newsletter</h2>
+                        <p class="desc desc--white">Rolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+                        <input class="subscribe__input" type="email" placeholder="Enter your email here">
+                        <button class="btn">Subscribe</button>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logos section footer-section">
+            <a href="#" class="footer-logo__link">
+                <img class="footer-logo__img" src="./assets/img/white-logo.png" alt="Footer Logo" width="120px">
+            </a>
+            <span class="footer-socials">
+                <a href="#" class="footer-socials__link">
+                    <ion-icon class="footer-socials__icon" name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#" class="footer-socials__link">
+                    <ion-icon class="footer-socials__icon" name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#" class="footer-socials__link">
+                    <ion-icon class="footer-socials__icon" name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#" class="footer-socials__link">
+                    <ion-icon class="footer-socials__icon" name="logo-youtube"></ion-icon>
+                </a>
+            </span>
+        </div>
+        <div class="footer__info section footer-section">
+            <div class="footer__intro">
+                <h2 class="footer__title">Our Restaurant</h2>
+                <p class="desc">Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam
+                    quaerat. Assumenda possimus eaque illo iste.</p>
+                <button class="btn btn--transparent footer__btn">Read more</button>
+            </div>
+            <div class="footer__contact">
+                <h2 class="footer__title">Get in touch</h2>
+                <ul class="footer-contact__list">
+                    <li class="footer-contact__item">
+                        <span class="footer-contact__label text--uppercase">Tel :</span>
+                        <span class="footer-contact__info">+76 (094) 754 43 7I</span>
+                    </li>
+                    <li class="footer-contact__item">
+                        <span class="footer-contact__label text--uppercase">Email :</span>
+                        <span class="footer-contact__info">your.email.inbox@here.com</span>
+                    </li>
+                    <li class="footer-contact__item">
+                        <span class="footer-contact__label text--uppercase">Location :</span>
+                        <span class="footer-contact__info">Canada, Toronto, Avenue 31B</span>
+                    </li>
+                </ul>
+                <button class="btn btn--transparent footer__btn">Read more</button>
+            </div>
+            <div class="footer__gallery">
+                <h2 class="footer__title">Gallery</h2>
+                <div class="footer__imgs">
+                    <span class="footer__img-container">
+                        <img src="./assets/img/gallery-i-2.jpg" alt="" class="footer__img">
+                    </span>
+                    <span class="footer__img-container">
+                        <img src="./assets/img/gallery-i-3.jpg" alt="" class="footer__img">
+                    </span>
+                    <span class="footer__img-container">
+                        <img src="./assets/img/gallery-i-4.jpg" alt="" class="footer__img">
+                    </span>
+                    <span class="footer__img-container">
+                        <img src="./assets/img/gallery-i-5.jpg" alt="" class="footer__img">
+                    </span>
+                </div>
+                <div class="footer-gallery__btn-container">
+                    <button class="btn btn--transparent footer__btn">Read more</button>
+                    <span class="footer-gallery__arrows">
+                        <ion-icon class="footer-gallery__arrow" name="arrow-back"></ion-icon>
+                        <ion-icon class="footer-gallery__arrow" name="arrow-forward"></ion-icon>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom section footer-section">
+            <span class="footer__copyright">© Tastyc 2021 . All rights reserved.</span>
+            <button class="btn btn--transparent footer__btn">Back to top</button>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
